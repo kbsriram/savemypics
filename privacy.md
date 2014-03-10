@@ -11,7 +11,7 @@ really does.
 
 ##Permissions requested
 
-Save My Pics uses the standard (Android AccountManager)[https://developer.android.com/reference/android/accounts/AccountManager.html] framework to register and store credentials for your accounts.
+Save My Pics uses the standard [Android AccountManager](https://developer.android.com/reference/android/accounts/AccountManager.html) framework to register and store credentials for your accounts.
 
 These permissions are used to access the AccountManager framework.
 
@@ -22,7 +22,7 @@ android.permission.MANAGE_ACCOUNTS
 android.permission.AUTHENTICATE_ACCOUNTS
 ```
 
-It also uses the standard (Android SyncAdapter)[https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html] framework, which wakes it up efficiently after new pictures show up on your device.
+It also uses the standard [Android SyncAdapter](https://developer.android.com/reference/android/content/AbstractThreadedSyncAdapter.html) framework, which wakes it up efficiently after new pictures show up on your device.
 
 These permissions are used to work within the SyncAdapter framework.
 

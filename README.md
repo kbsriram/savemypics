@@ -14,20 +14,19 @@ suitable keys directly from the provider. Then, create a couple of
 java files named `KeyFish.java` and `KeyFlickr.java` containing
 constructor and getter methods for the application key and
 secret. Please look at
-(android/src/org/savemypics/android/glue/CSnapfishGlue.java) and
-(android/src/org/savemypics/android/glue/CFlickrGlue.java) for details.
+[CSnapfishGlue.java](android/src/org/savemypics/android/glue/CSnapfishGlue.java) and
+[CFlickrGlue.java](android/src/org/savemypics/android/glue/CFlickrGlue.java) for details.
 
 If you want to run the test cases, you must also place your
 application keys and create tokens for a test user -- please read
-(plugins/README.md) for details.
+[the plugins README](plugins/README.md) for details.
 
 # Privacy
 
 My aim is to protect the privacy of your pictures upto the maximum
 extent possible with the online photo provider you choose. I've made
-the source code available partly so anyone can look at exactly what it
-really does, you don't have to rely on lofty claims from me. The
-source is also available under [the Simplified BSD
+the source code available so anyone can look at what it really
+does. The source is also available under [the Simplified BSD
 License](LICENCE.md).
 
 I've created a separate [privacy page](privacy.md) to list what you
