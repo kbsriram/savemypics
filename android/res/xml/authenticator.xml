@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="org.savemypics.android.account"
+    android:icon="@drawable/ic_launcher_smp"
+    android:smallIcon="@drawable/ic_launcher_smp"
+    android:label="@string/savemypics"
+/>
+<!--
+    Unable to guarantee that the "account" paramater passed
+    in to the preference settings is always available.
+    android:accountPreferences="@xml/acct_preferences"
+-->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/grid_b_2_3"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:background="@drawable/clickable_background"
+    android:layout_marginBottom="@dimen/grid_b_6">
+
+  <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginRight="@dimen/grid_b_6">
+
+    <TextView
+        android:id="@+id/preference_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/dark_text"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" />
+
+    <TextView
+        android:id="@+id/preference_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preference_title"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/dark_text"
+        android:maxLines="4" />
+
+  </RelativeLayout>
+
+  <CheckBox
+      android:id="@+id/preference_checkbox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"/>
+
+</LinearLayout>

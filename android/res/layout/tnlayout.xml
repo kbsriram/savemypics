@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.savemypics.android.view.CModularLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smp="http://schemas.android.com/apk/res/org.savemypics.android"
+    android:id="@+id/tnlayout_container"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    smp:horizontalSpacing="@dimen/grid_b_12"
+    smp:verticalSpacing="@dimen/grid_b_12"
+    smp:moduleWidth="@dimen/grid_m_2"
+    smp:moduleHeight="@dimen/grid_m_2">
+  <org.savemypics.android.view.CRoundedBitmapView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <org.savemypics.android.view.CRoundedBitmapView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <org.savemypics.android.view.CRoundedBitmapView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <org.savemypics.android.view.CRoundedBitmapView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <org.savemypics.android.view.CRoundedBitmapView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  <org.savemypics.android.view.CRoundedBitmapView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+</org.savemypics.android.view.CModularLayout>

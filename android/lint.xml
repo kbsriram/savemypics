@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+  <issue id="SetJavaScriptEnabled">
+    <ignore path="src/org/savemypics/android/authenticator/CFlickrWebActivity.java"/>
+  </issue>
+  <issue id="MissingVersion">
+    <ignore path="AndroidManifest.xml"/>
+  </issue>
+  <issue id="ExportedService">
+    <ignore path="AndroidManifest.xml"/>
+  </issue>
+  <issue id="MergeRootFrame">
+    <ignore path="res/layout/snapfish_login.xml"/>
+    <ignore path="res/layout/flickr_login_hook.xml"/>
+  </issue>
+  <issue id="IconLauncherShape" severity="ignore"/>
+
+</lint>

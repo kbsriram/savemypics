@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.savemypics.android.view.CMaximumWidthLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smp="http://schemas.android.com/apk/res/org.savemypics.android"
+    smp:maximumChildWidth="@dimen/grid_m_12"
+    android:id="@+id/account_item_info"
+    style="@style/StandardContainer">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        style="@style/BigTitle"
+        android:id="@+id/account_item_info_title"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/grid_b_6"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        style="@style/Body"
+        android:id="@+id/account_item_info_disabled"
+        android:layout_marginTop="@dimen/grid_b_3"
+        android:textColor="@color/red_accent"
+        android:text="@string/account_disabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/account_item_info_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <org.savemypics.android.view.CModularLayout
+          android:id="@+id/account_item_info_counters"
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/grid_b_3"
+          smp:horizontalSpacing="@dimen/grid_b_6"
+          smp:verticalSpacing="@dimen/grid_b_6"
+          smp:moduleWidth="@dimen/grid_m_2"
+          smp:moduleHeight="@dimen/grid_m_2"
+          smp:dividerEnabled="true">
+
+        <org.savemypics.android.view.CStatusCounterView
+            android:id="@+id/account_item_info_counter_uploaded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            smp:activeColor="@color/green_accent"
+            smp:captionText="@string/counter_saved"/>
+        <org.savemypics.android.view.CStatusCounterView
+            android:id="@+id/account_item_info_counter_pending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            smp:activeColor="@color/red_accent"
+            smp:captionText="@string/counter_pending"/>
+
+        <org.savemypics.android.view.CRefreshButton
+            android:id="@+id/account_item_info_refresh_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+      </org.savemypics.android.view.CModularLayout>
+
+      <TextView
+          style="@style/Body"
+          android:id="@+id/account_item_info_result"
+          android:textSize="@dimen/text_size_small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_12"/>
+
+      <TextView
+          style="@style/Body"
+          android:id="@+id/account_item_info_debug"
+          android:textSize="@dimen/text_size_small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_12"/>
+
+      <TextView
+          style="@style/Body"
+          android:id="@+id/account_item_info_pendings_title"
+          android:text="@string/recently_pending"
+          android:textStyle="bold"
+          android:textSize="@dimen/text_size_small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_3"/>
+
+      <include
+          android:id="@+id/account_item_info_pendings"
+          layout="@layout/tnlayout"/>
+
+      <TextView
+          style="@style/Body"
+          android:id="@+id/account_item_info_recents_title"
+          android:text="@string/recently_saved"
+          android:textStyle="bold"
+          android:textSize="@dimen/text_size_small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_3"/>
+
+      <include
+          android:id="@+id/account_item_info_recents"
+          layout="@layout/tnlayout"/>
+
+      <TextView
+          style="@style/Body"
+          android:id="@+id/account_item_info_downloads_title"
+          android:text="@string/recently_downloaded"
+          android:textStyle="bold"
+          android:textSize="@dimen/text_size_small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_3"/>
+
+      <include
+          android:id="@+id/account_item_info_downloads"
+          layout="@layout/tnlayout"/>
+
+      <TextView
+          style="@style/Body"
+          android:id="@+id/account_item_info_settings_summary"
+          android:textSize="@dimen/text_size_small"
+          android:textColor="@color/gray"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_3"
+          android:layout_marginBottom="@dimen/grid_b_12"/>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/BorderlessButton"
+        android:id="@+id/account_item_info_settings_button"
+        android:layout_marginBottom="@dimen/grid_b_3"
+        android:text="@string/change_settings"
+        android:layout_gravity="left" />
+    <View
+        style="@style/Divider"/>
+  </LinearLayout>
+</org.savemypics.android.view.CMaximumWidthLayout>

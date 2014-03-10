@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smp="http://schemas.android.com/apk/res/org.savemypics.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!-- Just a progress -->
+  <LinearLayout
+      android:id="@+id/flickr_hook_status"
+      android:visibility="gone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/grid_b_6"/>
+    <TextView
+        android:id="@+id/flickr_hook_status_message"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/grid_b_3"/>
+  </LinearLayout>
+
+  <!-- Intro -->
+  <ScrollView
+      android:id="@+id/flickr_login_form"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <org.savemypics.android.view.CMaximumWidthLayout
+        style="@style/StandardContainer"
+        android:paddingBottom="@dimen/grid"
+        smp:maximumChildWidth="@dimen/grid_m_8">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/BigTitle"
+            android:text="@string/title_login_flickr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/grid_b_2_3"
+            android:text="@string/desc_login_flickr" />
+
+        <Button
+            style="@style/FlatButton"
+            android:id="@+id/flickr_login_button"
+            android:layout_marginTop="@dimen/grid_b_3"
+            android:text="@string/action_flickr_login"
+            android:paddingLeft="@dimen/grid_b_2_3"
+            android:paddingRight="@dimen/grid_b_2_3"
+            android:layout_gravity="left" />
+      </LinearLayout>
+    </org.savemypics.android.view.CMaximumWidthLayout>
+  </ScrollView>
+
+</FrameLayout>
+
+

@@ -1,0 +1,88 @@
+<project name="plugins" default="jar" basedir=".">
+  <property name="source.dir" location="${basedir}/src"/>
+  <property name="test.dir" location="${basedir}/test"/>
+  <property name="reports.dir" value="${test.dir}/reports"/>
+  <property name="classes.dir" location="${basedir}/classes"/>
+  <property name="dist.dir"  location="${basedir}/dist"/>
+  <property name="lib.dir" value="${basedir}/lib"/>
+
+  <!-- Unnecessary for android, but just to be safe -->
+  <property name="java.source" value="1.5"/>
+  <property name="java.target" value="1.5"/>
+
+  <target name="init">
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${classes.dir}/core"/>
+    <mkdir dir="${classes.dir}/test"/>
+    <mkdir dir="${reports.dir}"/>
+  </target>
+
+  <target name="compile" depends="init">
+    <javac
+        source="${java.source}"
+        target="${java.target}"
+        srcdir="${source.dir}"
+        destdir="${classes.dir}/core"
+        debug="true"
+        includeantruntime="false">
+      <compilerarg value="-Xlint:all"/>
+      <classpath>
+        <pathelement path="${lib.dir}/android-json.jar"/>
+        <pathelement path="${lib.dir}/android-sqlite-standalone.jar"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <mkdir dir="${dist.dir}"/>
+    <jar
+        jarfile="${dist.dir}/plugins.jar"
+        basedir="${classes.dir}/core">
+      <include name="org/savemypics/**"/>
+      <exclude name="org/savemypics/android/util/**"/>
+    </jar>
+  </target>
+
+  <target name="test-compile" depends="compile">
+    <javac
+        source="${java.source}"
+        target="${java.target}"
+        srcdir="${test.dir}"
+        destdir="${classes.dir}/test"
+        debug="true"
+        includeantruntime="false">
+      <compilerarg value="-Xlint:all"/>
+      <classpath>
+        <pathelement location="${classes.dir}/core"/>
+        <pathelement path="${lib.dir}/junit-4.10.jar"/>
+        <pathelement path="${lib.dir}/android-json.jar"/>
+        <pathelement path="${lib.dir}/android-sqlite-standalone.jar"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="test" depends="test-compile">
+    <junit printsummary="yes" haltonfailure="yes">
+      <classpath>
+        <pathelement location="${classes.dir}/core"/>
+        <pathelement location="${classes.dir}/test"/>
+        <fileset dir="${lib.dir}">
+          <include name="**/*.jar"/>
+        </fileset>
+      </classpath>
+      <formatter type="plain"/>
+      <batchtest todir="${reports.dir}">
+        <fileset dir="${test.dir}">
+          <include name="**/*Test.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="clean">
+    <delete dir="${classes.dir}"/>
+    <delete dir="${dist.dir}"/>
+    <delete dir="${reports.dir}"/>
+  </target>
+
+</project>

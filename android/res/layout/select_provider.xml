@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smp="http://schemas.android.com/apk/res/org.savemypics.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <org.savemypics.android.view.CMaximumWidthLayout
+      style="@style/StandardContainer"
+      android:paddingBottom="@dimen/grid"
+      smp:maximumChildWidth="@dimen/grid_m_12">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_provider_choose">
+      <TextView
+          style="@style/BigTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/signin_provider_title"/>
+      <TextView
+          style="@style/Body"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="@dimen/grid_b_3"
+          android:text="@string/signin_provider_help"/>
+
+      <org.savemypics.android.view.CModularLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/grid_b_2_3"
+          smp:horizontalSpacing="@dimen/grid_b_6"
+          smp:verticalSpacing="@dimen/grid_b_6"
+          smp:moduleWidth="@dimen/grid_m_2"
+          smp:moduleHeight="@dimen/grid_m_2">
+        <Button
+            style="@style/FlatButton"
+            android:id="@+id/select_provider_snapfish_button"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableTop="@drawable/snapfish_icon"
+            android:text="@string/snapfish"/>
+        <Button
+            style="@style/FlatButton"
+            android:id="@+id/select_provider_flickr_button"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:drawableTop="@drawable/flickr_icon"
+            android:text="@string/flickr"/>
+      </org.savemypics.android.view.CModularLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_provider_done"
+        android:visibility="gone">
+      <TextView
+          style="@style/BigTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/signin_provider_success_title"/>
+
+      <TextView
+          style="@style/Body"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="@dimen/grid_b_3"
+          android:text="@string/signin_provider_success_help_1"/>
+
+      <include
+          android:id="@+id/select_provider_wifi_pref"
+          layout="@layout/checkbox_preference"/>
+
+      <View
+          style="@style/Divider"/>
+
+      <include
+          android:id="@+id/select_provider_upload_existing_pref"
+          layout="@layout/checkbox_preference"/>
+
+      <TextView
+          style="@style/Body"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="@dimen/grid_b_3"
+          android:text="@string/signin_provider_success_help_2"/>
+
+      <Button
+          style="@style/FlatButton"
+          android:id="@+id/select_provider_done_button"
+          android:layout_gravity="left"
+          android:paddingLeft="@dimen/grid_b_2_3"
+          android:paddingRight="@dimen/grid_b_2_3"
+          android:layout_marginTop="@dimen/grid_b_2_3"
+          android:text="@string/ok_gotit"/>
+
+    </LinearLayout>
+  </org.savemypics.android.view.CMaximumWidthLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+* remove debugging flags in AndroidManifest.xml
+* flip IS_PRODUCTION flag in CUtils.java
+* Update versioncode in AndroidManifest.xml
+* Run test cases in plugins
+* Run lint check in android
+* Commit changes - this gives a commitid used in the versionname.
+* ant clean release
+* copy bin/proguard/mapping.txt under corresponding versioncode-name.
+* also copy the commitid under corresponding versioncode-name

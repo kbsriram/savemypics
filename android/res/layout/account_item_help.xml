@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.savemypics.android.view.CMaximumWidthLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smp="http://schemas.android.com/apk/res/org.savemypics.android"
+    smp:maximumChildWidth="@dimen/grid_m_12"
+    android:id="@+id/account_item_help"
+    style="@style/StandardContainer">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        style="@style/BigTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_account_title"/>
+
+    <TextView
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_b_3"
+        android:text="@string/add_new_account_help"/>
+  </LinearLayout>
+</org.savemypics.android.view.CMaximumWidthLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="flickr_icon.svg"
+   inkscape:export-filename="/Users/kbs/personal/android/savemypics/android/res/drawable-xhdpi/flickr_icon.png"
+   inkscape:export-xdpi="43.200001"
+   inkscape:export-ydpi="43.200001">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.43"
+     inkscape:cx="100"
+     inkscape:cy="102.99094"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="860"
+     inkscape:window-height="672"
+     inkscape:window-x="252"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36218)"
+     style="display:inline">
+    <path
+       sodipodi:type="arc"
+       style="fill:#0063db;fill-opacity:1;stroke:none"
+       id="path3796"
+       sodipodi:cx="45"
+       sodipodi:cy="145"
+       sodipodi:rx="45"
+       sodipodi:ry="45"
+       d="M 45.000001,100 C 69.852815,100 90,120.14719 90,145 90,169.85281 69.852813,190 44.999999,190 20.147185,190 -4.8749563e-7,169.85281 0,145 4.7903502e-7,120.57851 19.478736,100.61448 43.892829,100.01362"
+       transform="translate(4.9999991,807.36218)"
+       sodipodi:start="4.712389"
+       sodipodi:end="10.970968"
+       sodipodi:open="true"
+       inkscape:export-filename="/Users/kbs/personal/android/savemypics/android/res/drawable-xhdpi/flickr_icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff0084;fill-opacity:1;stroke:none"
+       id="path3798"
+       sodipodi:cx="155"
+       sodipodi:cy="145"
+       sodipodi:rx="45"
+       sodipodi:ry="45"
+       d="m 155,100 c 24.85281,0 45,20.14719 45,45 0,24.85281 -20.14719,45 -45,45 -24.85281,0 -45,-20.14719 -45,-45 0,-24.42149 19.47874,-44.38552 43.89283,-44.98638"
+       transform="translate(-5.0000009,807.36218)"
+       sodipodi:start="4.712389"
+       sodipodi:end="10.970968"
+       sodipodi:open="true" />
+  </g>
+</svg>

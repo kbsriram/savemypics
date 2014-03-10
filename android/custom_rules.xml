@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <!-- use the head commitid for the version.name, which
+  is propagated into the generated manifest file. -->
+  <exec executable="git" outputproperty="version.name">
+    <arg value="rev-parse"/>
+    <arg value="--short"/>
+    <arg value="HEAD"/>
+  </exec>
+
+  <target name="-pre-compile">
+    <ant
+        antfile="${basedir}/../plugins/build.xml"
+        dir="${basedir}/../plugins"
+        target="jar"
+        inheritAll="false"/>
+    <mkdir dir="${basedir}/libs"/>
+    <copy
+        file="${basedir}/../plugins/dist/plugins.jar"
+        todir="${basedir}/libs"/>
+  </target>
+  <target name="-pre-clean">
+    <ant
+        antfile="${basedir}/../plugins/build.xml"
+        dir="${basedir}/../plugins"
+        target="clean"
+        inheritAll="false"/>
+    <!-- stupid. classpath libs are built statically. -->
+    <touch
+        file="${basedir}/libs/plugins.jar" millis="0"/>
+
+  </target>
+
+</project>
