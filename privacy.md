@@ -46,8 +46,10 @@ android.permission.ACCESS_NETWORK_STATE
 Finally, it uses these permissions to read pictures from, and write
 any downloaded pictures to your sdcard.
 
+```
 android.permission.READ_EXTERNAL_STORAGE
 android.permission.WRITE_EXTERNAL_STORAGE
+```
 
 ##Ads, tracking and analytics.
 
@@ -57,15 +59,15 @@ None within the app.
 
 Your photos are uploaded to albums grouped and named by month. They
 are not shared with anyone. As long as Snapfish itself and your
-account remains secure, only you (and Snapfish) can view your photos.
+account is secure, only you (and Snapfish) can view your photos.
 
-Snapfish does *not* offer uploading via SSL. So as your pictures are
+Snapfish does **not** offer uploading via SSL. So as your pictures are
 uploaded, they are potentially visible to anyone in control of the
 networks that lie between you and Snapfish. (This is also true if you
 use the regular website to upload pictures.)
 
 Photos are not downloaded by default, but if you do enable it - they
-are stored on your sdcard, and visible to *all* apps on your
+are stored on your sdcard, and visible to **all** apps on your
 device. (This is similar to photos you take from the Camera app on
 your device.)
 
